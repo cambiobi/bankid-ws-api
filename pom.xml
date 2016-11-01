@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>se.cambio.bi.bankid</groupId>
   <artifactId>bankid-ws-api</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>bankid-api</name>
   <description>WS API for BankID</description>
