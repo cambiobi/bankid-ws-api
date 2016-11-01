@@ -2,12 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
   <groupId>se.cambio.bi.bankid</groupId>
   <artifactId>bankid-ws-api</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
-
   <name>bankid-api</name>
   <description>WS API for BankID</description>
   <parent>
@@ -21,21 +19,22 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>1.8</java.version>
   </properties>
-
+  <scm>
+    <developerConnection>scm:git:git://code.cambio.se/bi/bankid-ws-api.git</developerConnection>
+  </scm>
   <dependencies>
     <dependency>
       <groupId>org.springframework.ws</groupId>
       <artifactId>spring-ws-core</artifactId>
     </dependency>
   </dependencies>
-
   <build>
     <plugins>
       <!-- tag::wsdl[] -->
       <plugin>
         <groupId>org.jvnet.jaxb2.maven2</groupId>
         <artifactId>maven-jaxb2-plugin</artifactId>
-        <version>0.12.3</version>
+        <version>0.13.1</version>
         <executions>
           <execution>
             <goals>
@@ -50,7 +49,11 @@
         </configuration>
       </plugin>
       <!-- end::wsdl[] -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.3</version>
+      </plugin>
     </plugins>
   </build>
-
 </project>
