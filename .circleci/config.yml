@@ -42,4 +42,4 @@ jobs:
 
 notify:
   webhooks:
-    - url: https://webhook.atomist.com/atomist/circle/teams/T024FBM4G
+    - url: https://webhook.atomist.com/atomist/circle/teams/AH8M1K4LJ
